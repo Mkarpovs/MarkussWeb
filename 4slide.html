@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>4slide - Website Code (Table Version)</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f3f0eb;
+      font-family: "Arial Black", Helvetica, sans-serif;
+      color: #000;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 85%;
+      max-width: 1200px;
+    }
+
+    .text-section {
+      width: 45%;
+    }
+
+    .text-section h1 {
+      font-size: 2.5em;
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+
+    .text-section p {
+      font-size: 1em;
+      font-family: Arial, sans-serif;
+      font-weight: 400;
+      line-height: 1.6;
+      max-width: 90%;
+    }
+
+    /* Таблица с кодом */
+    .table-section {
+      width: 50%;
+      background: #1e1e1e;
+      color: #dcdcdc;
+      border-radius: 8px;
+      padding: 20px;
+      font-family: "Courier New", monospace;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      color: #dcdcdc;
+      font-size: 0.95em;
+    }
+
+    td {
+      padding: 4px 8px;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .tag { color: #569CD6; }
+    .attr { color: #9CDCFE; }
+    .value { color: #CE9178; }
+
+    .bottom-lines {
+      position: absolute;
+      bottom: 40px;
+      left: 0;
+      width: 100%;
+    }
+
+    .bottom-lines div {
+      height: 2px;
+      background: #000;
+      margin: 10px 0;
+      width: 100%;
+    }
+
+    .side-buttons {
+      position: absolute;
+      right: 40px;
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .side-buttons a {
+      text-decoration: none;
+      background: #000;
+      color: #fff;
+      padding: 10px 18px;
+      border-radius: 6px;
+      font-weight: 700;
+      text-align: center;
+      transition: 0.2s;
+      width: 150px;
+    }
+
+    .side-buttons a:hover {
+      background: #333;
+    }
+
+    .side-buttons .divider {
+      height: 2px;
+      background: #000;
+      margin: 8px 0;
+      width: 100%;
+      opacity: 0.3;
+    }
+
+    @media (max-width: 900px) {
+      .container {
+        flex-direction: column;
+        gap: 40px;
+      }
+
+      .text-section, .table-section {
+        width: 90%;
+      }
+
+      .side-buttons {
+        right: 10px;
+      }
+
+      .side-buttons a {
+        width: 120px;
+        font-size: 0.9em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="text-section">
+      <h1>Website<br>HTML Code</h1>
+      <p>
+        This table represents the basic structure of my Binance Academy project website.  
+        Each page is built using simple HTML tags and CSS styling principles.
+      </p>
+    </div>
+
+    <div class="table-section">
+      <table>
+        <tr><td><span class="tag">&lt;!DOCTYPE html&gt;</span></td></tr>
+        <tr><td><span class="tag">&lt;html</span> <span class="attr">lang</span>=<span class="value">"en"</span><span class="tag">&gt;</span></td></tr>
+        <tr><td><span class="tag">&lt;head&gt;</span></td></tr>
+        <tr><td>&nbsp;&nbsp;<span class="tag">&lt;meta</span> <span class="attr">charset</span>=<span class="value">"UTF-8"</span><span class="tag">&gt;</span></td></tr>
+        <tr><td>&nbsp;&nbsp;<span class="tag">&lt;title&gt;</span>Blockchain Website<span class="tag">&lt;/title&gt;</span></td></tr>
+        <tr><td><span class="tag">&lt;/head&gt;</span></td></tr>
+        <tr><td><span class="tag">&lt;body&gt;</span></td></tr>
+        <tr><td>&nbsp;&nbsp;<span class="tag">&lt;header&gt;</span>Welcome to Blockchain Academy<span class="tag">&lt;/header&gt;</span></td></tr>
+        <tr><td>&nbsp;&nbsp;<span class="tag">&lt;nav&gt;</span></td></tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;a</span> <span class="attr">href</span>=<span class="value">"index.html"</span><span class="tag">&gt;</span>Home<span class="tag">&lt;/a&gt;</span></td></tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;a</span> <span class="attr">href</span>=<span class="value">"blockchain.html"</span><span class="tag">&gt;</span>Blockchain<span class="tag">&lt;/a&gt;</span></td></tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;a</span> <span class="attr">href</span>=<span class="value">"decentralization.html"</span><span class="tag">&gt;</span>Decentralization<span class="tag">&lt;/a&gt;</span></td></tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;a</span> <span class="attr">href</span>=<span class="value">"strategies.html"</span><span class="tag">&gt;</span>Strategies<span class="tag">&lt;/a&gt;</span></td></tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;a</span> <span class="attr">href</span>=<span class="value">"trading.html"</span><span class="tag">&gt;</span>Trading<span class="tag">&lt;/a&gt;</span></td></tr>
+        <tr><td>&nbsp;&nbsp;<span class="tag">&lt;/nav&gt;</span></td></tr>
+        <tr><td>&nbsp;&nbsp;<span class="tag">&lt;main&gt;</span></td></tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;h2&gt;</span>Learn About Blockchain<span class="tag">&lt;/h2&gt;</span></td></tr>
+        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;p&gt;</span>Understand blockchain, decentralization, and crypto trading basics.<span class="tag">&lt;/p&gt;</span></td></tr>
+        <tr><td>&nbsp;&nbsp;<span class="tag">&lt;/main&gt;</span></td></tr>
+        <tr><td><span class="tag">&lt;/body&gt;</span></td></tr>
+        <tr><td><span class="tag">&lt;/html&gt;</span></td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="bottom-lines">
+    <div></div>
+    <div></div>
+  </div>
+
+  <div class="side-buttons">
+    <a href="https://mkarpovs.github.io/html_exercise_08_10_25/">CV</a>
+    <a href="https://github.com/Mkarpovs">GitHub Profile</a>
+    <a href="#">Crypto Web</a>
+  </div>
+
+</body>
+</html>
