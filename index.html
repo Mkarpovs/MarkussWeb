@@ -3,127 +3,143 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio -- Markuss</title>
-  <link rel="icon" href="favicon.jpg" type="image/png">
-  <link rel="stylesheet" href="MarkussWeb/styles.css">
-</head>
-<body>
-    <style>
+  <title>Crypto and Web3 Basics</title>
+  <style>
     body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-      line-height: 1.6;
-      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+      background-color: #f3f0eb;
+      font-family: "Arial Black", Helvetica, sans-serif;
+      color: #000;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
     }
-    h1 {
-      color: #2c3e50;
+
+    .container {
       text-align: center;
+      margin-top: 15vh;
     }
-    h2 {
-      color: #3498db;
-      border-bottom: 2px solid #3498db;
-      padding-bottom: 5px;
+
+    .title {
+      font-size: 4em;
+      font-weight: 900;
+      letter-spacing: 1px;
+      line-height: 1.2;
     }
-    table, th, td {
-      border: 1px solid #34495e;
-      border-collapse: collapse;
-      padding: 8px;
+
+    .author {
+      margin-top: 10px;
+      font-size: 0.9em;
+      font-weight: 800;
     }
-    th {
-      background-color: #34495e;
-      color: white;
+
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding: 30px 60px;
+      font-size: 0.8em;
     }
-    img {
-      max-width: 100%;
-      height: auto;
-      border: 1px solid #ddd;
+
+    .footer-section {
+      text-align: left;
+    }
+
+    .footer-section p {
+      margin: 2px 0;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 0.75em;
+      letter-spacing: 0.5px;
+    }
+
+    .footer-section span {
+      font-weight: 400;
+      text-transform: none;
+    }
+
+    /* Панель справа */
+    .side-buttons {
+      position: absolute;
+      right: 40px;
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .side-buttons a {
+      text-decoration: none;
+      background: #000;
+      color: #fff;
+      padding: 10px 18px;
+      border-radius: 6px;
+      font-weight: 700;
+      text-align: center;
+      transition: 0.2s;
+      width: 150px;
+    }
+
+    .side-buttons a:hover {
+      background: #333;
+    }
+
+    .side-buttons .divider {
+      height: 2px;
+      background: #000;
+      margin: 8px 0;
+      width: 100%;
+      opacity: 0.3;
+    }
+
+    @media (max-width: 768px) {
+      .title {
+        font-size: 2.5em;
+      }
+      .side-buttons {
+        right: 10px;
+      }
+      .side-buttons a {
+        width: 120px;
+        font-size: 0.9em;
+      }
     }
   </style>
-  <div id="hero" class="banner" data-track="intro" style="background-color: #ecf0f1; padding: 20px; border-radius: 5px; margin-bottom: 20px;">
-    <h1>Portfolio -- Markuss</h1>
-    <h2>About Me</h2>
-    <p>Hello! I'm Markuss, I study at RNU. I enjoy learning new technologies and improving my skills. I'm particularly interested in <strong>web development</strong> and <em>blockchain technology</em>.</p>
-    <p>Outside of coding, I love <mark>sitting at my PC</mark> and exploring new technologies. My current goal is to master <sup>advanced</sup> web development techniques.</p>
+</head>
+<body>
+
+  <div class="container">
+    <h1 class="title">CRYPTO AND<br>WEB3 BASICS</h1>
+    <p class="author">MARKUSS KARPOVS</p>
   </div>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <p><strong>On the screen you can see that I started to create a website about crypto</strong></p>
-    <img src="image2.jpg" alt="Crypto website project" width="500px" title="My Crypto Project">
-  </section>
+  <div class="footer">
+    <div class="footer-section">
+      <p>NAME OF PROJECT:</p>
+      <span>Web3 Basics</span>
+    </div>
+    <div class="footer-section">
+      <p>PRESENTED BY:</p>
+      <span>Markuss Karpovs</span>
+    </div>
+    <div class="footer-section">
+      <p>PRESENTED TO:</p>
+      <span>Amit Joshi</span>
+    </div>
+  </div>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>HTML & CSS</li>
-      <li>JavaScript Basics</li>
-      <li>Web Design
-        <ul>
-          <li>Responsive Design</li>
-          <li>UI/UX Principles</li>
-        </ul>
-      </li>
-    </ul>
-  </section>
-
-  <section id="study-plan">
-    <h2>Weekly Study Plan</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>Day</th>
-          <th>Topic</th>
-          <th>Hours</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Monday</td>
-          <td>HTML</td>
-          <td>2</td>
-        </tr>
-        <tr>
-          <td>Tuesday</td>
-          <td>CSS</td>
-          <td>2</td>
-        </tr>
-        <tr>
-          <td>Wednesday</td>
-          <td>English</td>
-          <td>2</td>
-        </tr>
-        <tr>
-          <td>Thursday</td>
-          <td>Practice</td>
-          <td>3</td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
-
-  <blockquote>
-    "Code is like humor. When you have to explain it, it's bad."
-  </blockquote>
-
-  <p><q>Learning never exhausts the mind.</q> — Leonardo da Vinci</p>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>
-      <a href="mailto:bybitkarpa@gmail.com">Email Me</a> |
-      <a href="https://github.com/Mkarpovs" target="_blank">GitHub</a> |
-      <a href="index.html">Back to Top</a>
-    </p>
-  </section>
-
-  <img src="image1.jpg" alt="Markuss portrait" style="width: 200px; display: block; margin: 20px auto;">
+  <div class="side-buttons">
+    <a href="https://mkarpovs.github.io/html_exercise_08_10_25/">CV</a>
+    <a href="https://github.com/Mkarpovs">GitHub Profile</a>
+    <a href="#">Crypto Web</a>
+    <div class="divider"></div>
+    <a href="firstslide.html">← Back</a>
+    <a href="2slide.html">Next →</a>
+  </div>
 
 </body>
-
 </html>
-
-
-
-
