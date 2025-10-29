@@ -28,8 +28,8 @@ I’m also developing my upcoming website project called **CRYPTO101**, focused 
 
 ## 🧰 Technologies Used
 
-- **HTML5**
-- **CSS3**
+- **HTML**
+- **CSS**
 - **Favicon integration**
 - **Responsive design**
 - **Clean typography and gradient backgrounds**
